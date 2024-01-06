@@ -41,5 +41,6 @@ bin/
 ### Mac OS ###
 .DS_Store
 
-config.properties
 .idea
+
+src/main/resources/googleApiCredentials.json
