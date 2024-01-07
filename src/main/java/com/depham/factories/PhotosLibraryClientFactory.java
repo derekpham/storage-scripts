@@ -33,7 +33,6 @@ public class PhotosLibraryClientFactory {
 
   public static PhotosLibraryClient createClient(List<String> selectedScopes) {
     String credentialsPath = PhotosLibraryClientFactory.class.getClassLoader().getResource("googleApiCredentials.json").getPath();
-    System.out.println(credentialsPath);
     try {
       PhotosLibrarySettings settings = PhotosLibrarySettings.newBuilder()
           .setCredentialsProvider(FixedCredentialsProvider.create(getUserCredentials(credentialsPath, selectedScopes)))
